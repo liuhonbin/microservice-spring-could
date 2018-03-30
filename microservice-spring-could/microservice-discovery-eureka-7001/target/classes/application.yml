@@ -1,0 +1,18 @@
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: password123
+    
+server:
+  port: 7001
+  
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://user:password123@localhost:7001/eureka
+
+    
